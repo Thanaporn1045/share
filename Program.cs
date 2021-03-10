@@ -22,14 +22,14 @@ namespace หุ้น
                     }
                     else if (mode == "price")
                     {
-                        if (x >= 1)
+                        if (x < 1 && y < 1 )
                         {
-                            time = Math.Sqrt(y) + 1;
+                            time = -Math.Sqrt(y) + 1;
                             Console.WriteLine("{0} , {1}", time, y);
                         }
                         else
                         {
-                            time = -Math.Sqrt(y) + 1;
+                            time = Math.Sqrt(y) + 1;
                             Console.WriteLine("{0} , {1}", time, y);
                         }
                     }
